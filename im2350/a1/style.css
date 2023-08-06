@@ -1,0 +1,67 @@
+
+
+@font-face {
+    font-family: 'Space Mono', monospace;
+    src: url(https://fonts.googleapis.com/css2?family=Space+Mono&display=swap);
+   
+    font-family: 'Roboto', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono&display=swap);
+
+
+}
+
+h1 {
+    
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    background-color: rgb(255, 248, 225);
+    padding: 20px;
+    border-radius: 15px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+
+}
+
+h2{
+
+    font-family: 'Space Mono', monospace;
+    
+
+}
+
+h3 {
+    font-family: 'Space Mono', monospace;
+    font-size: xx-large;
+    margin-bottom: 12px;
+    margin-top: 80px;
+    
+}
+
+ol {
+
+    font-family: 'Roboto', sans-serif;
+    padding: 25px;
+    background-color: rgb(255, 248, 225);
+    border-radius: 15px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+p {
+    
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 248, 225);
+    padding: 10px;
+    border-radius: 15px;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+    font-size: 20px;
+    
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: block;
+}
