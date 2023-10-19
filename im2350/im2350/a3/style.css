@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Dongle:wght@300&family=Staatliches&display=swap');
+
+@font-face {
+  src: url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Dongle:wght@300&family=Staatliches&display=swap');
+  
+  font-family: 'Bungee Shade', sans-serif;
+
+  font-family: 'Dongle', sans-serif;
+  
+  font-family: 'Staatliches', sans-serif;
+  
+}
+
+#bgVideo {
+/* Making sure the entire video is covering the background */
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Separated the heading and set it up so that it covers the beginning of the webpage,
+  ensuring that the user is unable to view the paragraphs below unless they scroll. */
+
+.heading {
+  font-family: 'Bungee Shade', sans-serif;
+   position: relative;
+   color: white;
+   font-size: 5rem;
+   text-align: center;
+   text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+   margin-top: 15rem;
+   margin-bottom: 30rem;
+
+
+    
+}
+
+/*  h2 is just for the bottom text to credit myself so users are aware of who the website was created by,
+  cause why not. */
+
+h2{
+  position: relative;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+  margin-top: 200px;
+}
+
+/* h3 is used as the subheadings for each paragraph, so you understand some context on what is  being discussed
+  in each paragraph */
+
+h3{
+  font-family: 'Staatliches', sans-serif;
+  position: relative;
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+}
+
+p{
+  font-family: 'Dongle', sans-serif;
+}
+
+/* These sections are what make up the base of the fade in transition, and where all the text need to be,
+  so that they can animate onto the page.
+  I have also used max-width to perfectly distribute them far enough away from each other so that the background
+  video is able to play all the way through until it hits the bottom of the webpage. */
+
+section{
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+  font-size: 2rem;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  min-height: 100vh;
+}
+
+/* the .fade and .show are where the code for the text animation is placed.
+  The fade is for when the text is currently not in view.
+  The show is what will be happening once the text is in view.
+  I've set it up so that when the text is not visible, it has an opacity of 0
+  and a blur of 5px. Once the text is in view, the transition will last for 1.5 seconds
+  where the opacity will go to 1, making the text completely visible, and the blur will
+  go to 0px, therefore it will no longer be blurred.
+  Doing this creates an animation that the users can see as they scroll down the page,
+  further emphasisng the scroll function I am wanting to showcase. */
+
+.fade{
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1.5s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+}

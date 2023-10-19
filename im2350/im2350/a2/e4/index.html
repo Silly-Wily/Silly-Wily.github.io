@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <!-- Changed the background colour here, wasn't sure how to do it in css but remembered how to do it in html-->
+    <style>
+      body {
+        background: peachpuff;
+      }
+    </style>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will's Music</title>
+    <!-- I wanted to have an image that relates to music whilst also looking good as a favicon, therefore
+      I decided to go with a vinyl, as I feel it fits the style of a favicon and correlates to the music genre -->
+    <link rel="icon" href="/icons/vinyl32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="playerControls.js" defer></script>
+
+  </head>
+
+  <body>
+
+    <!-- this element holds all of the media player -->
+
+    <div class="video-player-wrapper">
+
+      <!-- this element holds the video element and the overlay -->
+
+      <div class="video-element-wrapper">
+
+        <video id="videoElement" controls>
+         <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4" type="video/mp4">
+
+        </video>
+
+        <img id="videoPlayOverlay" src="./icons/play.svg">
+
+      </div>
+
+      <!-- this element holds all of the custom controls -->
+
+      <div class="video-controls-wrapper" id="controlsWrapper">
+
+        <button class="video-control-button" id="playButton"></button>
+
+        <button class="video-control-button" id="muteButton"></button>
+        
+        <progress class="video-progress-bar" id="progressBar" value="0"></progress>
+
+        <!-- moved the 'fullScreenButton' button to be after 'progressBar', therefore will appear on the right most side of the media player.
+          I moved it here due to all media players display the fullscreen on the right side  -->
+
+        <button class="video-control-button" id="fullScreenButton"></button>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
