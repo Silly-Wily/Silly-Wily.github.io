@@ -92,7 +92,7 @@ section{
   where the opacity will go to 1, making the text completely visible, and the blur will
   go to 0px, therefore it will no longer be blurred.
   Doing this creates an animation that the users can see as they scroll down the page,
-  further emphasisng the scroll function I am wanting to showcase. */
+  further emphasising the scroll function I am wanting to showcase. */
 
 .fade{
   opacity: 0;
